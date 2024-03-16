@@ -16,11 +16,13 @@ body{
     "menu menu menu menu menu menu menu menu menu menu menu menu"
     "notifications notifications notifications notifications sales sales sales sales sales sales balance balance"
     "notifications notifications notifications notifications sales sales sales sales sales sales balance balance"
-    "weakly weakly weakly weakly sales sales sales sales sales sales meetings meetings"
+    "weakly weakly weakly weakly sales sales sales sales sales sales balance balance"
     "weakly weakly weakly weakly sales sales sales sales sales sales meetings meetings"
     "weakly weakly weakly weakly sales sales sales sales sales sales meetings meetings"
     "product product product product product schedule schedule schedule schedule schedule schedule schedule"
-    "product product product product product schedule schedule schedule schedule schedule schedule schedule";;
+    "product product product product product schedule schedule schedule schedule schedule schedule schedule"
+    "product product product product product schedule schedule schedule schedule schedule schedule schedule"
+    ;
     gap: 8px;
     width: 800px;
     height: 600px;
@@ -141,56 +143,205 @@ body{
     background: #87d8f9;
     border-radius: 5px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 .top{
     display: flex;
     justify-content: space-between;
+}
+.bot{
+    display: flex;
+    justify-content: space-between;
+}
+.bot i{
+    font-size: 35px;
+    background-color: white;
+    border-radius: 100%;
 }
 .sales {
     grid-area: sales;
     background: var(--color-secundary);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+}
+.sales div{
+    width: 100%;
+}
+.sales h1{
+    padding: 30px 0;
+    font-size: 40px;
+}
+.grafica_mid_box{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grafica_mid_box img{
+    width: 100%;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 30px;
+}
+.profit{
+    color: var(--color-ternary);
 }
 .balance {
     display: flex;
     flex-direction: column;
     grid-area: balance;
+    justify-content: space-around;
+    align-items: center;
     background: var(--color-secundary);
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 .balance div{
     width: 100%;
     height: 33.3%;
     border-radius: 5px;
+    padding: 5px;
 }
+
 .booking{
     background: #aef7ae;
     display: flex;
     flex-direction: column;
 }
-.booking p{
+.balance p{
     font-size: 13px;
 }
-
+.balance h3{
+    font-size: 18px;  
+}
 .weekly {
     grid-area: weakly;
     background: var(--color-secundary);
     border-radius: 5px;
+    padding: 10px 5px;
+}
+.title_left_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title_left_box p {
+    font-weight: bolder;
+}
+.perfiles_left_box{
+    font-size: 35px;
+}
+.bx-columns {
+    background: var(--color-ternary);
+    border-radius: 50%;
+    
+}
+.bxs-right-top-arrow-circle {
+    color: var(--color-quinto);
+    background: black;
+    border-radius: 50%;
+}
+.grafica_left_box img{
+    width: 100%;
+    margin-top: 40px;
 }
 .meetings {
     background: #d7f065;
     grid-area: meetings;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
 }
+.meetings p{
+    font-size: 12px;
+}
+
+.meetings button{
+    font-size: 10px;
+    height: 20%;
+    width: 60%;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5%;
+}
+
+.img_item_6{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+.img_item_6 i{
+    font-size: 30px;
+    background-color: #d7f065;
+    border-radius: 100%;
+    color: black;
+}
+
 .product {
     grid-area: product;
     background: var(--color-secundary);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 98%;
+}
+.product > *{
+    margin: 5px;
+}
+.product i{
+    font-size: 35px;
+}
+.header_box_7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button1, .button2{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: var(--shadows);
+}
+.button1 {
+    background-color: #FCFE91;
+}
+.button2 {
+    background-color: var(--color-ternary);
+}
+.imgs_box_7{
+    display: flex;
+    justify-content: space-between;
+}
+.imgs_izq_der_box_7 i{
+    background-color: #FCFE91;
+    border-radius: 100%;
+}
+.right i:nth-child(2){
+    background-color: none;
+    color: white;
 }
 .schedule {
     grid-area: schedule;
     background: var(--color-secundary);
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.schedule img{
+    width: 100%;
+    height: 100%;
+    margin: 50px;
 }
